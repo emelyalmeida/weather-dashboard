@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weather – Previsão do Tempo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="logo">☁️ Weather</div>
+  <nav><a id="nHome" class="act" onclick="show('home')">🏠 Início</a><a id="nFav" onclick="show('favs')">♡ Cidades <span id="cnt"></span></a></nav>
+  <div class="search"><input id="q" placeholder="Buscar cidade..." autocomplete="off"><button id="go" aria-label="Buscar">🔍</button><div class="sug" id="sug"></div></div>
+  <button class="icon-btn" id="geo" title="Usar minha localização">📍</button>
+  <button class="icon-btn" id="theme" title="Modo claro/escuro">🌙</button>
+</header>
+<section id="favview" style="display:none"><h3>♥ Cidades favoritas</h3><div class="fcards" id="fcards"></div></section>
+<div class="grid">
+  <section class="hero">
+    <button class="fav" id="fav" title="Favoritar">♡</button>
+    <h2 id="city">—</h2><small id="upd"></small>
+    <div class="big"><div class="emoji" id="emoji"></div><div class="temp" id="temp"></div><div class="cond" id="cond"></div><small id="feel"></small></div>
+    <div class="stats">
+      <div class="stat">💧 Umidade<b id="hum"></b></div>
+      <div class="stat">🌬️ Vento<b id="wind"></b></div>
+      <div class="stat">⏲️ Pressão<b id="pres"></b></div>
+    </div>
+  </section>
+  <section class="panel"><h3>Previsão para 7 dias</h3><div id="days"></div></section>
+  <aside class="side" id="cities">
+    <div class="panel loc" id="loc">📍 —</div>
+    <div class="panel"><h4>Outras cidades populares</h4><div class="chips" id="pop"></div></div>
+    <div class="panel" id="favbox" style="display:none"><h4>Favoritas</h4><div class="chips" id="favs"></div></div>
+    <div class="quote">“O tempo sempre se acomoda, assim como nós.” <div style="margin-top:14px;font-style:normal">💗</div></div>
+  </aside>
+</div>
+<div class="note" id="note"></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

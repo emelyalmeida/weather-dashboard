@@ -1,4 +1,3 @@
-// Para dados reais, coloque sua chave da OpenWeatherMap aqui (rodando fora do Claude).
 const API_KEY = "";
 const CITIES = {
   "Mongaguá, SP":{lat:-24.09,lon:-46.62,t:26},"Praia Grande, SP":{lat:-24.0,lon:-46.41,t:26},"São Paulo":{lat:-23.55,lon:-46.63,t:24},
